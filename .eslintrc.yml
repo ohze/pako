@@ -3,6 +3,7 @@ env:
 
 parserOptions:
   ecmaVersion: 5
+  sourceType: "module"
 
 globals:
   Uint8Array:  false

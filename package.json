@@ -1,5 +1,6 @@
 {
   "name": "pako",
+  "side-effects": false,
   "description": "zlib port to javascript - fast, modularized, with browser support",
   "version": "1.0.6",
   "keywords": [
@@ -29,6 +30,10 @@
   },
   "devDependencies": {
     "ansi": "^0.3.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "babelify": "^7.3.0",
     "benchmark": "^2.1.4",
     "bluebird": "^3.5.0",
     "browserify": "^14.4.0",

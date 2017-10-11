@@ -25,12 +25,12 @@ lint:
 
 
 test: lint
-	./node_modules/.bin/mocha
+	./node_modules/.bin/mocha --require babel-polyfill --compilers js:babel-register
 
 test-browser: lint
 	rm -f ./test/browser/pako.js
-	./node_modules/.bin/browserify -r ./ -s pako > test/browser/pako.js
-	@SAUCE_PROJ=${GITHUB_PROJ} grunt test
+	./node_modules/.bin/browserify -r ./ -s pako -t babelify > test/browser/pako.js
+	@SAUCE_PROJ=${GITHUB_PROJ} ./node_modules/.bin/grunt test
 
 cover:
 	rm -rf cover

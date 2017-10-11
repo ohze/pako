@@ -8,11 +8,11 @@
 
 var assert = require('assert');
 
-var c = require('../lib/zlib/constants');
-var msg = require('../lib/zlib/messages');
+var c = require('../lib/zlib/constants').default;
+var msg = require('../lib/zlib/messages').default;
 //var zlib_stream = require('../lib/zlib/zstream');
 var zlib_inflate = require('../lib/zlib/inflate');
-var inflate_table = require('../lib/zlib/inftrees');
+var inflate_table = require('../lib/zlib/inftrees').default;
 
 var pako  = require('../index');
 

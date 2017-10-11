@@ -10,10 +10,10 @@ var assert = require('assert');
 var fs = require('fs');
 var path  = require('path');
 
-var c = require('../lib/zlib/constants');
-var msg = require('../lib/zlib/messages');
+var c = require('../lib/zlib/constants').default;
+var msg = require('../lib/zlib/messages').default;
 var zlib_deflate = require('../lib/zlib/deflate');
-var ZStream = require('../lib/zlib/zstream');
+var ZStream = require('../lib/zlib/zstream').default;
 
 var pako  = require('../index');
 
