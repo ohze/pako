@@ -2,7 +2,7 @@
   "name": "pako-es",
   "side-effects": false,
   "description": "zlib port to javascript - fast, modularized, with browser support",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "zlib",
     "deflate",
