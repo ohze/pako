@@ -2,7 +2,7 @@
   "name": "pako-es",
   "side-effects": false,
   "description": "zlib port to javascript - fast, modularized, with browser support",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "keywords": [
     "zlib",
     "deflate",
@@ -23,6 +23,7 @@
     "dist/",
     "lib/"
   ],
+  "module": "index.js",
   "license": "(MIT AND Zlib)",
   "repository": "nodeca/pako",
   "scripts": {
